@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+  font-family: 'Microsoft JhengHei', sans-serif;
+  background: url(https://lolstatic-a.akamaihd.net/lolkit/1.1.6/resources/images/bg-default.jpg) no-repeat;
+  background-attachment: fixed;
+}
+
+#background{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0 50px 0;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.block{
+  color: white;
+  width: 300px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.block:hover{
+  transform: scale(1.2);
+}
+
+.block:hover .block__preview{
+  filter: brightness(1.2);
+}
+
+.block:hover .block__info{
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  filter: brightness(1.2);
+  font-weight: 800;
+}
+
+.block__preview{
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.block__info{
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.block__info__host{
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  background: white;
+}
+
+.block__info__msg{
+  display: inline-block;
+  padding-left: 30px;
+  line-height: 25px;
+  height: 50px;
+}
