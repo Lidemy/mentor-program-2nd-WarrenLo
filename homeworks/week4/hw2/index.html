@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='zh-TW'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Week4_hw2</title>
+    <link type='text/css' href='hw2.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class='image'></div>
+    <div class='background'>
+      <div class='container'>
+        <div class='container__bar'></div>
+        <h1 class="title">
+          程式導師實驗計畫第二期報名表單
+        </h1>
+        <p class="note">
+          詳情請參考：<a target='_blank' href='https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b'>
+            https://medium.com/hulis-blog/mentor-program-s2-f876c4e13d3b</a><br>
+          記得填完表單之後還要寫信報名才算成功，兩者缺一不可！
+        </p>
+        <p class='required'>*必填</p>
+        <form onsubmit='return test()' method='POST' accept-charset="utf-8">
+          <div class='input__block'>
+            <p class='input__header'>電子郵件地址 <span class='star'>*</span></p>
+            <input class='input' type="email" name='email' placeholder="你的電子郵件" required>
+            <p class="input__warning"></p>
+          </div>
+          <div class='input__block'>
+            <p class='input__header'>暱稱 <span class='star'>*</span></p>
+            <input class='input' type="text" name='name' placeholder="您的回答">
+            <p class="input__warning">這是必填問題</p>
+          </div>
+          <div class='input__block'>
+            <p class='input__header'>報名類型 <span class='star'>*</span></p>
+            <input class='radio' type="radio" name='class_type' value='工程師培養班'>工程師培養班（每週付出四十小時，從零培養到工程師，學費是一個月薪水）<br>
+            <input  class='radio' type="radio" name='class_type' value='業餘班'>業餘班（依照個人目標訂立學習計畫，學費一萬五千元）
+            <p class="input__warning">這是必填問題</p>
+          </div>
+          <div class='input__block'>
+            <p class='input__header'>現在的職業 <span class='star'>*</span></p>
+            <p class='note'>範例：學生、前端工程師、待業中、業務</p>
+            <input class='input' type="text" name='job' placeholder="您的回答">
+            <p class="input__warning">這是必填問題</p>
+          </div>
+          <div class='input__block'>
+            <p class='input__header'>是否有程式相關背景? <span class='star'>*</span></p>
+            <p class='note'>範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課...</p>
+            <input class='input' type="text" name='background' placeholder="您的回答">
+            <p class="input__warning">這是必填問題</p>
+          </div>
+          <div class='input__block'>
+            <p class='input__header'>其他</p>
+            <p class='note'>其他任何你想講的</p>
+            <input class='input' type="text" name='others' placeholder="您的回答">
+          </div>
+            <input class='submit' type='submit' placeholder="提交">
+        </form>
+        <p class="warning">請勿利用 Google 表單送出密碼</p>
+      </div>
+      <div class="footer">
+        <div class="footer__warning">Google 並未設可獲建立這項內容。
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOTy7j1OjgI-q9xYaiGCJJn5w2TkpB1JNZZXXQwqCt3SsDsg/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSeOTy7j1OjgI-q9xYaiGCJJn5w2TkpB1JNZZXXQwqCt3SsDsg/viewform" target="_blank">檢舉濫用情形</a>
+          -
+          <a href="http://www.google.com/accounts/TOS" target="_blank">服務條款</a>
+          -
+          <a href="http://www.google.com/google-d-s/terms.html" target="_blank">其他條款</a>
+        </div>
+        <div class='footer__logo'>
+          <a target="_blank" href="https://www.google.com/forms/about/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms"><img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_74x24px.svg" alt="Google" height="24px" width="74px">&nbsp;<span class="footer__logo__form">表單</span></a>
+        </div>
+      </div>
+    </div>
+  <body>
+  <script type='text/javascript' src='hw2.js'></script>
+<html>

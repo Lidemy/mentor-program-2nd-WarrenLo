@@ -1,0 +1,35 @@
+<!DOCTYPEhtml>
+<html>
+  <head>
+    <title>Week4_hw4</title>
+  </head>
+  <body>
+    <div class='sample'>Test</div>
+    <button class='show'>Show</button>
+    <button class='hide'>Hide</button>
+    </div>
+  <script>
+      function q(element){
+        return { //return 多個值
+          'qs': document.querySelector(element),
+          hide: function(){
+            document.querySelector(element).style.display = 'none';
+          },
+          show: function() {
+            document.querySelector(element).style.display = 'block';
+          }
+        }
+      }
+
+      var element = q('.sample');
+
+      document.addEventListener('DOMContentLoaded', ()=>{
+        q('.show').qs.addEventListener('click', ()=>{
+          element.show();
+        })
+        q('.hide').qs.addEventListener('click', ()=>{
+          element.hide();
+        })
+      })
+  </script>
+</html>
