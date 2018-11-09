@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", "Microsoft JhengHei";
+  background-color: #81d8d0;
+}
+
+input {
+  font-family: "Quicksand", "Microsoft JhengHei";
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#title {
+  margin: 0;
+  padding: 20px 0;
+  color: #fffdd0;
+  font-size: 120px;
+  font-weight: 100;
+  text-align: center;
+}
+
+#todo {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #fff;
+}
+#todo .todo__input {
+  height: 50px;
+  font-size: 25px;
+  line-height: 50px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#todo .create {
+  position: relative;
+}
+#todo .create .todo__create {
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: all 0.2s;
+}
+#todo .create .todo__create:focus ~ .create-border {
+  transform: scaleX(1);
+}
+#todo .create-border {
+  position: absolute;
+  top: 31px;
+  left: 0px;
+  height: 2px;
+  width: 100%;
+  background: #81d8d0;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.2s ease-out;
+}
+#todo #items .todo__check {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+#todo #items .todo__check .check-box {
+  display: none;
+}
+#todo #items .todo__check .check-box:checked ~ .check-icon {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+#todo #items .todo__check .check-box:checked ~ .check-content {
+  color: rgba(0, 0, 0, 0.2);
+  text-decoration: line-through;
+}
+#todo #items .todo__check .check-icon {
+  border: 3px solid #81d8d0;
+  background: transparent;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#todo #items .todo__check .check-content {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+#todo #items .todo__check:hover .check-delete {
+  display: inline;
+}
+#todo #items .todo__check .check-delete {
+  position: absolute;
+  left: 92%;
+  display: none;
+}
+#todo #items .todo__check .check-delete .fa-times {
+  transition: all 0.3s ease-out;
+}
+#todo #items .todo__check .check-delete .fa-times:before {
+  content: "";
+  color: #81d8d0;
+  transition: all 0.2s;
+}
+#todo #items .todo__check .check-delete .fa-times:hover {
+  transform: rotate(90deg);
+}
+#todo #items .todo__check .check-delete .fa-times:hover:before {
+  color: #ff00d0;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/*# sourceMappingURL=todo.css.map */

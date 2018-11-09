@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+$color__background : rgb(129, 216, 208);
+$color__border : rgba(0, 0, 0, 0.2);
+$color__title : rgb(255, 253, 208);
+$color__icon-hover : #ff00d0;
+$font-family__main : 'Quicksand', 'Microsoft JhengHei';
+$font-size__title: 120px;
+$width__container: 600px;
+$border_1px: 1px solid $color__border;
+$border_2px: 2px solid $color__border;
+$border_icon: 3px solid $color__background;
+$icon_size: 20px;
+$height__input: 50px;
+$font-size__create: $height__input /2;
+
+body, html{
+  margin: 0;
+  padding: 0;
+  font-family: $font-family__main;
+  background-color: $color__background;
+}
+
+input{
+  font-family: $font-family__main;
+}
+
+.container{
+  max-width: $width__container;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#title{
+  margin: 0;
+  padding: 20px 0;
+  color: $color__title;
+  font : {
+    size: $font-size__title;
+    weight: 100;
+  }
+  text-align: center;
+}
+
+#todo{
+  border: $border_2px;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #fff;
+  .todo__input{
+    height: $height__input;
+    font-size: $font-size__create;
+    line-height: $height__input;
+    border: none;
+    border-bottom: $border_1px;
+  }
+  .create{
+    position: relative;
+    .todo__create{
+      width: 100%;
+      box-sizing: border-box;
+      background: transparent;
+      margin-bottom: 20px;
+      border-bottom: $border_2px;
+      outline: none;
+      transition: all 0.2s;
+      &:focus ~ .create-border{
+        transform: scaleX(1);
+      }
+    }
+    &-border{
+      position: absolute;
+      top: 31px;
+      left: 0px;
+      height: 2px;
+      width: 100%;
+      background: $color__background;
+      transform: scaleX(0);
+      transform-origin: 0 0;
+      transition: all 0.2s ease-out;
+    }
+  }
+
+  #items{
+    .todo__check{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 10px;
+      position: relative;
+      .check-box{
+        display: none;
+        &:checked ~ .check-icon{
+          border: $border_2px;
+          background: $color__border;
+        }
+        &:checked ~ .check-content{
+          color: $color__border;
+          text-decoration: line-through;
+        }
+      }
+      .check-icon{
+        border: $border_icon;
+        background: transparent;
+        border-radius: 50%;
+        height: $icon_size;
+        width: $icon_size;
+        display: inline-block;
+        box-sizing: border-box;
+      }
+      .check-content{
+        display: inline-block;
+        margin-left: ($icon_size / 2);
+        font-size: $icon_size;
+        height: $icon_size;
+        line-height: $icon_size;
+      }
+
+      &:hover .check-delete{
+        display: inline;
+      }
+
+      .check-delete{
+        position: absolute;
+        left: 92%;
+        display: none;
+        .fa-times{
+          transition: all 0.3s ease-out;
+          &:before{
+            content:"\f00d";
+            color: $color__background;
+            transition: all 0.2s;
+          }
+          &:hover{
+            transform: rotate(90deg);
+            &:before{
+              color: $color__icon-hover;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
+::-webkit-input-placeholder {
+    color: $color__border;
+}
