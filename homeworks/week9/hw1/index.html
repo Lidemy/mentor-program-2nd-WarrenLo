@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='stylesheet' href='todo.css' type='text/css'>
+    <script src='todo.js' type='text/javascript'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  </head>
+  <body>
+    <div class='container'>
+
+      <h1 id='title'>
+        todo list
+      </h1>
+
+      <div id='todo'>
+        <label class='create'>
+          <input type='text' class='todo__input todo__create' id='todo__create'
+          placeholder='create a new item' autocomplete='off' value='' onkeypress='create_item()'/>
+          <span class="create-border"></span>
+        </label>
+        <div id='items'>
+          <label class='todo__input todo__check' id='item_1'>
+            <input type='checkbox' class='check-box'/>
+            <div class='check-icon'></div>
+            <div class='check-content'>每當寫作業突破瓶頸之後才發現 . . . </div>
+            <label class='check-delete' onclick='delete_item(this.id)' id='1'><i class="fas fa-times"></i></label>
+          </label>
+          <label class='todo__input todo__check' id='item_2'>
+            <input type='checkbox' class='check-box'checked/>
+            <div class='check-icon'></div>
+            <div class='check-content'>還有瓶蓋</div>
+            <label class='check-delete' onclick='delete_item(this.id)' id='2'><i class="fas fa-times"></i></label>
+          </label>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
