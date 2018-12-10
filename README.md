@@ -60,14 +60,14 @@ Mindset 建立：
 
 #### 目標：
 
-- [ ] 知道程式如何執行
-- [ ] 了解寫程式的本質只是一行行的指令
-- [ ] 了解前端與後端的區別
-- [ ] 能說出從發出一個 request 到接收 response 中間發生的事
-- [ ] 了解不同載具的差異（Desktop、Mobile、Web）
-- [ ] 了解基本的 command line 指令
-- [ ] 知道 Git 在做什麼
-- [ ] 知道 add、commit、push、pull 等基本 Git 指令
+- [X] 知道程式如何執行
+- [X] 了解寫程式的本質只是一行行的指令
+- [X] 了解前端與後端的區別
+- [X] 能說出從發出一個 request 到接收 response 中間發生的事
+- [X] 了解不同載具的差異（Desktop、Mobile、Web）
+- [X] 了解基本的 command line 指令
+- [X] 知道 Git 在做什麼
+- [X] 知道 add、commit、push、pull 等基本 Git 指令
 
 ### 第二週（09/10 ~ 09/16）：程式基礎（下）
 
@@ -81,11 +81,11 @@ Mindset 建立：
 
 #### 目標：
 
-- [ ] 了解常用內建函式
-- [ ] 熟悉程式語法並解決基礎問題
-- [ ] 知道什麼是 unit test
-- [ ] 知道如何寫測試
-- [ ] 知道如何測試 function
+- [X] 了解常用內建函式
+- [X] 熟悉程式語法並解決基礎問題
+- [X] 知道什麼是 unit test
+- [X] 知道如何寫測試
+- [X] 知道如何測試 function
 
 ### 第三週（09/17 ~ 09/23）：前端基礎（上）
 
@@ -101,14 +101,14 @@ HTML 的部分就簡單帶過幾個常見的 tag，帶到 head 的一些屬性�
 
 #### 目標：
 
-- [ ] 知道 HTML 是什麼
-- [ ] 知道 CSS 是什麼
-- [ ] 知道 inline、block 跟 inline-block 的區別
-- [ ] 知道什麼是 box model
-- [ ] 知道 position 的所有屬性及其差別
-- [ ] 知道 :hover, :before, :after
-- [ ] 知道 :nth-child
-- [ ] 熟悉 CSS selector
+- [X] 知道 HTML 是什麼
+- [X] 知道 CSS 是什麼
+- [X] 知道 inline、block 跟 inline-block 的區別
+- [X] 知道什麼是 box model
+- [X] 知道 position 的所有屬性及其差別
+- [X] 知道 :hover, :before, :after
+- [X] 知道 :nth-child
+- [X] 熟悉 CSS selector
 
 ### 第四週（09/24 ~ 09/30）：前端基礎（中）
 
@@ -123,15 +123,15 @@ HTML 的部分就簡單帶過幾個常見的 tag，帶到 head 的一些屬性�
 
 #### 目標：
 
-- [ ] 知道 JavaScript 是什麼
-- [ ] 知道 JavaScript 跟 Java 的關係
-- [ ] 知道 DOM 是什麼
-- [ ] 知道如何用 JavaScript 操控 DOM 物件
-- [ ] 知道什麼是 API
-- [ ] 知道什麼是 Ajax
-- [ ] 知道如何存取跨網域的資源（CORS）
-- [ ] 知道什麼是 JSON
-- [ ] 知道什麼是 JSONP 及其原理
+- [X] 知道 JavaScript 是什麼
+- [X] 知道 JavaScript 跟 Java 的關係
+- [X] 知道 DOM 是什麼
+- [X] 知道如何用 JavaScript 操控 DOM 物件
+- [X] 知道什麼是 API
+- [X] 知道什麼是 Ajax
+- [X] 知道如何存取跨網域的資源（CORS）
+- [X] 知道什麼是 JSON
+- [X] 知道什麼是 JSONP 及其原理
 
 ### 第五週（10/01 ~ 10/07）：後端基礎（上）
 
@@ -143,11 +143,11 @@ HTML 的部分就簡單帶過幾個常見的 tag，帶到 head 的一些屬性�
 
 #### 目標：
 
-- [ ] 知道 PHP 是什麼
-- [ ] 知道前端與後端的差別
-- [ ] 知道什麼是資料庫
-- [ ] 了解基本 SQL 語法
-- [ ] 寫出基本 CRUD 應用
+- [X] 知道 PHP 是什麼
+- [X] 知道前端與後端的差別
+- [X] 知道什麼是資料庫
+- [X] 了解基本 SQL 語法
+- [X] 寫出基本 CRUD 應用
 
 ### 第六週（10/08 ~ 10/14）：後端基礎（中）
 
@@ -160,10 +160,10 @@ HTML 的部分就簡單帶過幾個常見的 tag，帶到 head 的一些屬性�
 
 #### 目標：
 
-- [ ] 知道什麼是 Session
-- [ ] 知道什麼是 Cookie
-- [ ] 知道 Session 與 Cookie 的差別
-- [ ] 知道雜湊演算法原理以及應用
+- [X] 知道什麼是 Session
+- [X] 知道什麼是 Cookie
+- [X] 知道 Session 與 Cookie 的差別
+- [X] 知道雜湊演算法原理以及應用
 - [ ] 知道什麼是 SQL Injection 以及如何防範
 - [ ] 知道什麼是 XSS 以及如何防範
 - [ ] 知道什麼是 CSRF 以及如何防範
@@ -179,12 +179,12 @@ HTML 的部分就簡單帶過幾個常見的 tag，帶到 head 的一些屬性�
 
 #### 目標：
 
-- [ ] 知道 jQuery 是做什麼的
-- [ ] 知道 jQuery 與 vanilla js 的差別
-- [ ] 知道如何與自己寫的 API 串接
-- [ ] 知道什麼是 Bootstrap
-- [ ] 知道 Bootstrap 原理及如何應用
-- [ ] 知道什麼是網格系統以及如何應用在 RWD
+- [X] 知道 jQuery 是做什麼的
+- [X] 知道 jQuery 與 vanilla js 的差別
+- [X] 知道如何與自己寫的 API 串接
+- [X] 知道什麼是 Bootstrap
+- [X] 知道 Bootstrap 原理及如何應用
+- [X] 知道什麼是網格系統以及如何應用在 RWD
 
 ### 第八週（10/22 ~ 10/28）：後端基礎（下）
 
@@ -220,14 +220,14 @@ HTML 的部分就簡單帶過幾個常見的 tag，帶到 head 的一些屬性�
 
 #### 目標：
 
-- [ ] 了解 CSS 預處理器的目的以及原理
+- [X] 了解 CSS 預處理器的目的以及原理
 - [ ] 知道 postcss 是什麼
-- [ ] 了解什麼是 Cache
-- [ ] 知道 HTTP Cache 的原理以及相關 Header
-- [ ] 知道什麼是 Stack
-- [ ] 知道什麼是 Queue
+- [X] 了解什麼是 Cache
+- [X] 知道 HTTP Cache 的原理以及相關 Header
+- [X] 知道什麼是 Stack
+- [X] 知道什麼是 Queue
 - [ ] 知道 Event Loop 的運作方式
-- [ ] 知道 CSS Selector 權重的計算方式
+- [X] 知道 CSS Selector 權重的計算方式
 
 ### 第十週（11/05 ~ 11/11）：前端中階（下）
 
